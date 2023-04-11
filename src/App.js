@@ -1,12 +1,8 @@
 import './App.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route,} from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Colla from "./Pages/Colla";
-import Contact from "./Pages/Contact";
+import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from 'react-bootstrap/Nav';
+
 const logo = require('./Logo.jpg');
 
 
