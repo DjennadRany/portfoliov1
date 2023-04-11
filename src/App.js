@@ -18,9 +18,7 @@ function App() {
     
         <Nav activeKey="/" onSelect={(selectedKey) => `selected ${selectedKey}`}>
           <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/About">About</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/Colla">Colla</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/Contact">Contact</Nav.Link></Nav.Item>
+         
 
         </Nav>
         <img class="log" src={logo} alt="logo"/>
