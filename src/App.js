@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const logo = require('./Logo.jpg');
 
 
+
 function App() {
   return (
     <><body>
@@ -15,9 +16,8 @@ function App() {
     <br></br>
         <div className="App-intro">
 
-        <h1 class="titel">
-          Chef de projet technique / Webmaster / Développeur Front-end / Développeur A.E.M / Fullstack développeur JS / Growth Haker
-        </h1>
+        <h1 class="titel" id="titel">
+         </h1>
 
         <br></br>
       <Accordion>
@@ -148,6 +148,18 @@ function App() {
     
   );
 }
+
+var i = -1;
+var txt = 'Chef de projet technique / Webmaster / Développeur Front-end / Développeur A.E.M / Fullstack développeur JS / Growth Haker';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("titel").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}typeWriter()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 export default App;
